@@ -6,13 +6,18 @@ public class GameController : MonoBehaviour
     public int foundedCats;
     public int catsNumber;
     public UnityEvent OnVictory;
-    bool gameEnd = false;
+    public UnityEvent OnCatSpawn;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         catsNumber = transform.childCount;
+
+
+
+        Screen.SetResolution(1920, 1080, true);
         
-    
+
     }
 
     // Update is called once per frame
@@ -32,6 +37,11 @@ public class GameController : MonoBehaviour
         }
         //foundedCats++;
 
-        if (gameEnd) return;
+
+        if (foundedCats >= 3)
+        {
+            OnCatSpawn.Invoke();
+        }
+
     }
 }
