@@ -1,21 +1,20 @@
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
+
 
 public class Timer : MonoBehaviour
 {
     public float tempo = 10f;
-    public TextMeshProUGUI textTimer;
+    public TMP_Text _textinc;
 
     public UnityEvent OnLost;
 
-    private bool acabou = false;
-
+    
     void Start()
     {
 
-
+        _textinc = GetComponent<TMP_Text>();
 
 
 
@@ -25,23 +24,18 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (acabou) return;
-
+        
+        _textinc.text = tempo.ToString("N0");
         tempo -= Time.deltaTime;
 
         if (tempo <= 0)
         {
             tempo = 0;
-            acabou = true;
+
             Destroy(gameObject);
             OnLost.Invoke();
-            // Aqui tu pode chamar algo tipo:
-            // gameController.GameOver();
+
         }
 
-        textTimer.text = Mathf.Ceil(tempo).ToString();
-
-        
-      
     }
 }
