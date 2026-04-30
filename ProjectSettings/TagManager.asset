@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: nuvens
+    uniqueID: 1887315463
+    locked: 0
+  - name: Cats
+    uniqueID: 423127767
+    locked: 0
+  - name: Obstacles
+    uniqueID: 4046027807
+    locked: 0
+  - name: HUD
+    uniqueID: 174009253
+    locked: 0
+  - name: Derrota
+    uniqueID: 681094299
+    locked: 0
+  - name: Vitoria
+    uniqueID: 1801143421
+    locked: 0
+  m_RenderingLayers:
+  - Default
