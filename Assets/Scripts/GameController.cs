@@ -17,14 +17,21 @@ public class GameController : MonoBehaviour
 
 
         Screen.SetResolution(1920, 1080, true);
-        
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.LeftAlt))
+        {
+            Screen.SetResolution(1600, 900, true);
+        }
+
         
+
+
     }
     public void FoundCat()
     {
